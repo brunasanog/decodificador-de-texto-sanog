@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto SaNog</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+            <div class="blockOne">
+                <div class="image">
+                    <img id="logo" src="./assets/logo.png" alt="logo da página">
+                </div>
+            
+                <div class="mainText">
+                    <h1 id="title">Bem-Vindo(a) ao Decodificador de Texto SaNog</h1>
+                    <textarea id="inputText" placeholder="Digite seu texto aqui"></textarea>
+                </div>
+
+                <div class="secundText">
+                <p id="paragraph">Apenas letras minúsculas e sem acento!</p>
+                </div>
+            
+                <div class="buttonsInput">
+                    <button id="encryptBtn">CRIPTOGRAFAR</button>
+                    <button id="decryptBtn">DESCRIPTOGRAFAR</button>
+                    <button id="copyBtnInput">COPIAR</button>
+                    <button id="pasteBtn">COLAR</button>
+                </div>
+            </div>
+            
+            <div class="blockTwo">
+                <textarea id="outputText" readonly></textarea>
+
+                <div class="buttonsOutput">
+                    <button id="copyBtnOutput">COPIAR</button>
+                </div>
+                
+                <img id="imagemOutput" src="./assets/imagemOutput.png">
+                
+            </div>
+    </div>
+    
+
+    <script src="./src/script.js"></script>
+</body>
+
+</html>

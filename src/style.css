@@ -1,0 +1,222 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #000000;
+    --link-color: #000;
+    --box-color: #ffffff;
+    --border-color: #ccc;
+    --button-focus-color: #ff6347;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+
+    --primary-font: 'Segoe UI', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2%;
+    padding: 3%;
+}
+
+.blockOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 3%;
+    background-color: #fffafa;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.blockTwo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 3%;
+    background-color: #fffafa;
+    border-radius: 10px;
+    width: 27%;
+}
+
+#logo {
+    width: 170px;
+    height: auto;
+}
+
+.mainText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+#title {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 3%;
+}
+
+.secundText {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#paragraph {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+#inputText {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    background-color: var(--box-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    resize: none;
+}
+
+#inputText:focus {
+    outline: none;
+}
+
+#outputText {
+    width: 100%;
+    height: 50%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    background-color: var(--box-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    resize: none;
+}
+
+#outputText:focus {
+    outline: none;
+}
+
+#imagemOutput {
+    width: 100px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Segoe UI';
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: var(--button-focus-color);
+}
+
+@media (max-width: 768px) {
+
+    body {
+        height: auto;
+        overflow: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blockOne,
+    .blockTwo {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    body {
+        height: auto;
+        overflow: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blockOne,
+    .blockTwo {
+        width: 85%;
+        padding: 5%;
+    }
+
+    #title {
+        font-size: 25px;
+    }
+
+    #inputText,
+    #outputText {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 10px;
+        margin: 5px;
+    }
+
+    #logo {
+        width: 150px;
+    }
+}
